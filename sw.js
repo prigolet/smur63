@@ -1,6 +1,6 @@
-/* Service worker de l'aide-mémoire SMUR 63, version 2.6 (empreinte 24eb620b9b). Tout le site est mis en cache à l'installation ;
+/* Service worker de l'aide-mémoire SMUR 63, version 2.6 (empreinte c1321734fe). Tout le site est mis en cache à l'installation ;
    les pages se servent d'abord depuis le cache (hors ligne) puis se mettent à jour en arrière-plan ; aucun rechargement forcé. */
-var CACHE = "smur63-2.6-24eb620b9b";
+var CACHE = "smur63-2.6-c1321734fe";
 var FICHIERS = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/icon-512-maskable.png", "./icons/apple-touch-icon.png"];
 self.addEventListener("install", function (e) { e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FICHIERS); }).then(function () { return self.skipWaiting(); })); });
 self.addEventListener("activate", function (e) { e.waitUntil(caches.keys().then(function (ks) { return Promise.all(ks.filter(function (k) { return k !== CACHE; }).map(function (k) { return caches.delete(k); })); }).then(function () { return self.clients.claim(); })); });
