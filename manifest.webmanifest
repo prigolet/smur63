@@ -1,0 +1,31 @@
+{
+ "name": "Aide-mémoire SMUR 63",
+ "short_name": "SMUR 63",
+ "lang": "fr",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#F2F4F6",
+ "theme_color": "#FFFFFF",
+ "description": "Aide-mémoire personnel du SMUR 63 : minuteur de RCP, médicaments, check-lists, protocoles, calculateur, accouchement. Outil personnel à valider, ne remplace ni le référentiel ni la prescription.",
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-512-maskable.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
